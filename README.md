@@ -24,6 +24,16 @@
 
 ## Installation
 
+You can also load directly from UNPKG as a standalone library.
+
+```html
+<script src="https://unpkg.com/@finos/perspective@0.6.0/dist/umd/perspective.js"></script>
+<script src="https://unpkg.com/@finos/perspective-viewer@0.6.0/dist/umd/perspective-viewer.js"></script>
+<script src="https://unpkg.com/@finos/perspective-viewer-datagrid@0.6.0/dist/umd/perspective-viewer-datagrid.js"></script>
+<script src="https://unpkg.com/@finos/perspective-viewer-d3fc@0.6.0/dist/umd/perspective-viewer-d3fc.js"></script>
+<script src="https://unpkg.com/perspective-map-plugin@0.3.5/dist/index.js"></script>
+```
+
 As a module with NPM or YARN
 
 ```bash
@@ -61,15 +71,6 @@ import "leaflet/dist/leaflet.css";
 ```
 
 ## How to use
-
-You can also load directly from UNPKG as a standalone library.
-```html
-<script src="https://unpkg.com/@finos/perspective@0.6.0/dist/umd/perspective.js"></script>
-<script src="https://unpkg.com/@finos/perspective-viewer@0.6.0/dist/umd/perspective-viewer.js"></script>
-<script src="https://unpkg.com/@finos/perspective-viewer-datagrid@0.6.0/dist/umd/perspective-viewer-datagrid.js"></script>
-<script src="https://unpkg.com/@finos/perspective-viewer-d3fc@0.6.0/dist/umd/perspective-viewer-d3fc.js"></script>
-<script src="https://unpkg.com/perspective-map-plugin@0.3.5/dist/index.js"></script>
-```
 
 The usage is simple, and there is only one requirement. The plugin expects to receive the data as CSV. It should have a column called geometry, which will have the geospatial data.
 
