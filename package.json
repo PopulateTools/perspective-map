@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "prepublish": "npm run build"
   },
-  "repository": "https://github.com/jorgeatgu/perspective-map",
+  "repository": "https://github.com/PopulateTools/perspective-map",
   "main": "dist/index.js",
   "dependencies": {
     "@finos/perspective-viewer": "0.6.2",

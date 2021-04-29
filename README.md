@@ -9,9 +9,9 @@
 <br />
 
 <div align="center">
-  <img src="https://img.shields.io/npm/l/:perspective-plugin-map"/>
-    <img src="https://img.shields.io/bundlephobia/minzip/perspective-map-plugin"/>
-    <img src="https://img.shields.io/npm/v/perspective-map-plugin"/>
+  <img src="https://img.shields.io/npm/l/:perspective-map"/>
+    <img src="https://img.shields.io/bundlephobia/minzip/perspective-plugin"/>
+    <img src="https://img.shields.io/npm/v/perspective-plugin"/>
 </div>
 
 ## Table of Contents
@@ -31,7 +31,7 @@ You can also load directly from UNPKG as a standalone library.
 <script src="https://unpkg.com/@finos/perspective-viewer@0.6.0/dist/umd/perspective-viewer.js"></script>
 <script src="https://unpkg.com/@finos/perspective-viewer-datagrid@0.6.0/dist/umd/perspective-viewer-datagrid.js"></script>
 <script src="https://unpkg.com/@finos/perspective-viewer-d3fc@0.6.0/dist/umd/perspective-viewer-d3fc.js"></script>
-<script src="https://unpkg.com/perspective-map-plugin@0.3.5/dist/index.js"></script>
+<script src="https://unpkg.com/perspective-map@1.0.0/dist/index.js"></script>
 ```
 
 As a module with NPM or YARN
@@ -110,19 +110,19 @@ In your CSS, you should override the custom properties that we have created.
 <div>
 <h3>Choroplet spanish regions</h3>
 <a href="https://bl.ocks.org/jorgeatgu/0ec3f662231e1222b24d1a62a58780fb">
-  <img src="https://raw.githubusercontent.com/jorgeatgu/perspective-map/main/images/chroloplet.png?token=AAUGYV6RLBLWMPY7GIWRSPLARGAFU"/>
+  <img src="https://raw.githubusercontent.com/PopulateTools/perspective-map/main/images/chroloplet.png"/>
 </a>
 </div>
 <div>
 <h3>Choroplet spanish regions override scale color</h3>
 <a href="https://bl.ocks.org/jorgeatgu/bd2a217bec9297a81f07d32fe7c24f2a">
-  <img src="https://raw.githubusercontent.com/jorgeatgu/perspective-map/main/images/chroloplet-scale.png?token=AAUGYVYZZL5ZOTFFXR6IJ4TARF77M"/>
+  <img src="https://raw.githubusercontent.com/PopulateTools/perspective-map/main/images/chroloplet-scale.png"/>
 </a>
 </div>
 <div>
 <h3>Map marker</h3>
 <a href="https://bl.ocks.org/jorgeatgu/b9555928ff49ddbdceccda73c5ca248b">
-  <img src="https://raw.githubusercontent.com/jorgeatgu/perspective-map/main/images/map-marker.png?token=AAUGYV4DLDPJDFX3GXZZQFDARGAG4"/>
+  <img src="https://raw.githubusercontent.com/PopulateTools/perspective-map/main/images/map-marker.png"/>
 </a>
 </div>
 <div>
