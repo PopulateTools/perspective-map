@@ -1,10 +1,10 @@
-<h1 align="center">Perspective Leaflet</h1>
+<h1 align="center">Perspective Map</h1>
 
 <div align="center">
   🗺
 </div>
 <div align="center">
-  Includes a map of Leaflet in <a href="https://github.com/finos/perspective/">Perspective</a> by [Populate](populate.tools)
+  Includes a map of Leaflet in <a href="https://github.com/finos/perspective/">Perspective</a> by [Populate](https://populate.tools)
 </div>
 <br />
 
