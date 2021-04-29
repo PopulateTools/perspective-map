@@ -1,0 +1,21 @@
+perspective-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+:root {
+  --perspective-map-range-1: #fef0d9;
+  --perspective-map-range-2: #fdcc8a;
+  --perspective-map-range-3: #fc8d59;
+  --perspective-map-range-4: #e34a33;
+  --perspective-map-range-5: #b30000;
+  --perspective-map-category-1: #feebe2;
+  --perspective-map-category-2: #fbb4b9;
+  --perspective-map-category-3: #f768a1;
+  --perspective-map-category-4: #c51b8a;
+  --perspective-map-category-5: #7a0177;
+}
