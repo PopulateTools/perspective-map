@@ -31,7 +31,7 @@ You can also load directly from UNPKG as a standalone library.
 <script src="https://unpkg.com/@finos/perspective-viewer@0.6.0/dist/umd/perspective-viewer.js"></script>
 <script src="https://unpkg.com/@finos/perspective-viewer-datagrid@0.6.0/dist/umd/perspective-viewer-datagrid.js"></script>
 <script src="https://unpkg.com/@finos/perspective-viewer-d3fc@0.6.0/dist/umd/perspective-viewer-d3fc.js"></script>
-<script src="https://unpkg.com/perspective-map@1.0.0/dist/index.js"></script>
+<script src="https://unpkg.com/perspective-map@1.0.1/dist/index.js"></script>
 ```
 
 As a module with NPM or YARN
@@ -49,7 +49,7 @@ import "@finos/perspective-viewer";
 import "@finos/perspective-viewer-datagrid";
 import "@finos/perspective-viewer-d3fc";
 import "@finos/perspective-viewer/themes/all-themes.css";
-import "perspective-map-plugin";
+import "perspective-map";
 ```
 
 
@@ -128,7 +128,7 @@ In your CSS, you should override the custom properties that we have created.
 <div>
 <h3>Chroloplet map with Vue</h3>
 <a href="https://codesandbox.io/s/j1hk0">
-  <img src="https://raw.githubusercontent.com/jorgeatgu/perspective-map/main/images/chroloplet.png?token=AAUGYV6RLBLWMPY7GIWRSPLARGAFU"/>
+  <img src="https://raw.githubusercontent.com/PopulateTools/perspective-map/main/images/chroloplet.png"/>
 </a>
 </div>
 
