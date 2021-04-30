@@ -136,6 +136,6 @@ In your CSS, you should override the custom properties that we have created.
 ## Development
 
 - clone the repo
-- ```npm i or yarn``
+- ```npm i or yarn```
 
 Start coding! 
