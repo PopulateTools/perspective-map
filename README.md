@@ -4,7 +4,7 @@
   🗺
 </div>
 <div align="center">
-  Includes a map of Leaflet in <a href="https://github.com/finos/perspective/">Perspective</a> by [Populate](https://populate.tools)
+  Includes a map of Leaflet in <a href="https://github.com/finos/perspective/">Perspective</a> by <a href="https://populate.tools">Populate</a>
 </div>
 <br />
 
@@ -37,8 +37,11 @@ You can also load directly from UNPKG as a standalone library.
 As a module with NPM or YARN
 
 ```bash
+# npm
 npm i perspective-leaflet --save-dev
-yarn perspective-leaflet
+
+# yarn
+yarn add perspective-leaflet
 ```
 
 And then import it:
@@ -53,16 +56,15 @@ import "perspective-map";
 ```
 
 
-## Requeriments
+## Requirements
 
-The plugin has been tested with the latest versions of Perspective, 0.8.0, which was released on 28.04.2021.
+The plugin has been tested with the latest versions of Perspective (>= 0.8.0) which was released on 28.04.2021.
 
 You will also need to include the Leaflet CSS
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 ```
-
 
 Or
 
@@ -72,7 +74,7 @@ import "leaflet/dist/leaflet.css";
 
 ## How to use
 
-The usage is simple, and there is only one requirement. The plugin expects to receive the data as CSV. It should have a column called geometry, which will have the geospatial data.
+The plugin expects to receive the data as CSV, and it should have a column called `geometry`, which will have the geospatial data in TopoJSON format.
 
 An example:
 
@@ -86,7 +88,7 @@ population,city,geometry
 
 ## CSS
 
-If you don't like the color scale, you can override it using custom properties. To create color scales for maps, we recommend using [ColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
+You can override the color scale using custom properties. To create color scales for maps, we recommend using [ColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
 
 In your CSS, you should override the custom properties that we have created.
 
@@ -135,7 +137,8 @@ In your CSS, you should override the custom properties that we have created.
 
 ## Development
 
-- clone the repo
-- ```npm i or yarn```
+- Clone the repo
+- Install dependencies
+- Start coding! 
+- Send a PR
 
-Start coding! 
