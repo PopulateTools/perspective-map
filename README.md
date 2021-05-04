@@ -74,7 +74,7 @@ import "leaflet/dist/leaflet.css";
 
 ## How to use
 
-The plugin expects to receive the data as CSV, and it should have a column called `geometry`, which will have the geospatial data in string-like GeoJSON or TopoJSON format (string-like).
+The plugin expects to receive the data as CSV, and it should have a column called `geometry`, which will have the geospatial data in GeoJSON or TopoJSON format (string-like).
 
 An example:
 
