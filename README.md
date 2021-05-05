@@ -9,7 +9,6 @@
 <br />
 
 <div align="center">
-  <img src="https://img.shields.io/npm/l/:perspective-map"/>
     <img src="https://img.shields.io/bundlephobia/minzip/perspective-map"/>
     <img src="https://img.shields.io/npm/v/perspective-map"/>
 </div>
