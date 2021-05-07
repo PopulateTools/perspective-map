@@ -102,14 +102,7 @@ export class MapPlugin {
     try {
       const columns = JSON.parse(this.getAttribute("columns"))
       const geomColumn = this.getAttribute("geom") || "geometry" // default geoJSON column name
-      let mapMetric;
-      let mapZoom;
-      if (this.getAttribute("config-map")) {
-        const getConfigMap = JSON.parse(this.getAttribute("config-map"))
-        const { metric, zoom } = getConfigMap
-        mapMetric = metric;
-        mapZoom = zoom;
-      }
+      const { metric: mapMetric, zoom: mapZoom = false } = JSON.parse(this.getAttribute("config-map") || {}) || {}
 
       // Enforces to have a geometry column
       if (!columns.includes(geomColumn)) {
