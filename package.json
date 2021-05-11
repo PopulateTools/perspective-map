@@ -1,14 +1,14 @@
 {
   "name": "perspective-map",
   "description": "Perspective map",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "map",
     "perspective"
   ],
   "scripts": {
     "build": "webpack --mode production",
-    "prepublish": "npm run build"
+    "prepublish": "yarn build"
   },
   "repository": "https://github.com/PopulateTools/perspective-map",
   "main": "dist/index.js",
