@@ -26,10 +26,10 @@
 You can also load directly from UNPKG as a standalone library.
 
 ```html
-<script src="https://unpkg.com/@finos/perspective@0.6.0/dist/umd/perspective.js"></script>
-<script src="https://unpkg.com/@finos/perspective-viewer@0.6.0/dist/umd/perspective-viewer.js"></script>
-<script src="https://unpkg.com/@finos/perspective-viewer-datagrid@0.6.0/dist/umd/perspective-viewer-datagrid.js"></script>
-<script src="https://unpkg.com/@finos/perspective-viewer-d3fc@0.6.0/dist/umd/perspective-viewer-d3fc.js"></script>
+<script src="https://unpkg.com/@finos/perspective@0.6.2/dist/umd/perspective.js"></script>
+<script src="https://unpkg.com/@finos/perspective-viewer@0.6.2/dist/umd/perspective-viewer.js"></script>
+<script src="https://unpkg.com/@finos/perspective-viewer-datagrid@0.6.2/dist/umd/perspective-viewer-datagrid.js"></script>
+<script src="https://unpkg.com/@finos/perspective-viewer-d3fc@0.6.2/dist/umd/perspective-viewer-d3fc.js"></script>
 <script src="https://unpkg.com/perspective-map@1.0.1/dist/index.js"></script>
 ```
 
@@ -82,6 +82,27 @@ population,city,geometry
 785123,"Zaragoza","{""type"":""Point"",""coordinates"":[-0.8850860595703125,41.64828831259533]}"
 125123,"Teruel","{""type"":""Point"",""coordinates"":[-1.1061859130859375,40.345497469392406]}"
 785123,"Huesca","{""type"":""Point"",""coordinates"":[-0.41473388671875,42.14202329789122]}"
+```
+
+### config-map
+
+You can choose the metric and zoom value of the map with the `map-config. This attribute is optional.
+
+Create an object
+```javascript
+const configMap = {
+  metric: "population",
+  zoom: true
+}
+```
+
+`metric: string` This is the column of data used to color the map and display it in the legend. If not defined, the map uses the first value of the data.
+`zoom: boolean`, enable/disable the zoom of the map.
+
+Stringify the object to add it as an attribute to the `perspective-viewer`.
+```javascript
+const element = document.getElementsByTagName("perspective-viewer")[0];
+element.setAttribute("config-map", JSON.stringify(configMap))
 ```
 
 
