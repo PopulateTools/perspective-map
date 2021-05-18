@@ -102,7 +102,16 @@ export class MapPlugin {
     try {
       const columns = JSON.parse(this.getAttribute("columns"))
       const geomColumn = this.getAttribute("geom") || "geometry" // default geoJSON column name
-      const { metric: mapMetric, zoom: mapZoom = false } = JSON.parse(this.getAttribute("config-map") || {}) || {}
+
+      let mapZoom = false
+      let mapMetric
+
+      //Checks if the config object has been declared
+      if(this.getAttribute("config-map") !== null) {
+        const { metric, zoom } = JSON.parse(this.getAttribute("config-map") || {}) || {}
+        mapMetric = metric
+        mapZoom = zoom || false
+      }
 
       // Enforces to have a geometry column
       if (!columns.includes(geomColumn)) {
@@ -113,7 +122,9 @@ export class MapPlugin {
       const map = createMapNode(this, div, { zoom: mapZoom });
 
       // fetch the current displayed data
-      const data = await view.to_json() || []
+      let data = await view.to_json() || []
+      //Some datasets may come with an empty geometry field, so we have to filter them to avoid errors.
+      data = data.filter(({ geometry }) => geometry !== '')
       if (data.some(({ [geomColumn]: geometry }) => !!geometry)) {
 
         // get the first [key, value] from the dataset to determine its type
