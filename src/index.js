@@ -195,7 +195,9 @@ export class MapPlugin {
         );
 
         if (features.length) {
-          createLegend({ grades, getColor, continuous: isVarContinuous }).addTo(map)
+          if (![...new Set(features.map(d => d[geomColumn].type))].includes('Point')) {
+            createLegend({ grades, getColor, continuous: isVarContinuous }).addTo(map)
+          }
 
           const tooltip = createTooltip({ grades, getColor })
           tooltip.addTo(map)
