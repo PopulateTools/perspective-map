@@ -11,6 +11,7 @@ const config = {
     libraryTarget: "umd",
     globalObject: "this",
     umdNamedDefine: true,
+    publicPath: ''
   },
   watchOptions: {
     aggregateTimeout: 600,
